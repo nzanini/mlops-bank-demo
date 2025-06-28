@@ -1,0 +1,16 @@
+stages:
+  preprocess:
+    cmd: python src\preprocessing.py
+    deps:
+    - data\raw\bank.csv
+    - src\preprocessing.py
+    outs:
+    - data\processed\test.csv
+    - data\processed\train.csv
+  train:
+    cmd: python src\train.py
+    deps:
+    - data\processed\train.csv
+    - src\train.py
+    outs:
+    - models\rf_model.joblib

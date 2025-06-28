@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/Nahuel/Desktop/Practica%20MLOps%20-%20AWS/Ejemplos/mlops-bank-demo/mlruns/0/bc635da2408145699543daa23f567cdb/artifacts
+end_time: 1751128628084
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: bc635da2408145699543daa23f567cdb
+run_name: agreeable-cat-259
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751128625532
+status: 3
+tags: []
+user_id: Nahuel
