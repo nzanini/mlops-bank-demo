@@ -1,0 +1,24 @@
+# 1. Create project folder and enter it
+mkdir mlops-bank-demo
+cd mlops-bank-demo
+
+# 2. Initialize Git repository (for code & DVC configs)
+git init
+
+# 3. Create and activate a Python virtual environment
+python -m venv .venv
+.venv\Scripts\activate.bat        # PowerShell; use `source .venv/bin/activate` on WSL/macOS
+
+# 4. Upgrade pip and install core dependencies
+pip install --upgrade pip
+pip install pandas scikit-learn joblib mlflow dvc fastapi uvicorn
+
+# 5. Freeze exact versions for reproducibility
+pip freeze > requirements.txt
+
+# 6. Initialize DVC (creates .dvc/ folder and config)
+dvc init
+
+# 7. Tell Git to ignore data and models directories
+echo "data/" >> .gitignore
+echo "models/" >> .gitignore

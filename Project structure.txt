@@ -1,0 +1,15 @@
+mlops-bank-demo/
+├── data/
+│   ├── raw/               # raw data (versioned by DVC, not in Git)
+│   └── processed/         # train/test CSVs
+├── models/                # serialized model artifact
+├── src/                   # all Python code lives here
+│   ├── data_ingestion.py
+│   ├── preprocessing.py
+│   ├── train.py
+│   └── predict.py         # simple inference script
+├── dvc.yaml               # DVC pipeline definition
+├── .dvcignore             # files/directories DVC should ignore
+├── requirements.txt       # pinned Python deps
+├── Dockerfile             # containerization recipe
+└── README.md              # project overview
